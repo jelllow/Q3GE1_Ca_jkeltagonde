@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swapping & Adding Two Numbers</title>
+</head>
+
+<body>
+    <div id="inputs"></div>
+    <div id="swapped"></div>
+    <div id="sum"></div>
+    <script>
+        var num1 = parseFloat(prompt("Enter a first number: "));
+        var num2 = parseFloat(prompt("Enter a second number: "));
+        document.getElementById("inputs").innerHTML = "The inputs before swapping: " + num1 + " and " + num2 + ".";
+
+        [num1, num2] = [num2, num1];
+        document.getElementById("swapped").innerHTML = "After swapping: " + num1 + " and " + num2 + ".";
+
+        sum = num1 + num2;
+        document.getElementById("sum").innerHTML = "The sum of the two numbers is " + sum + ".";
+    </script>
+</body>
+
+</html>
